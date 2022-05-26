@@ -87,7 +87,6 @@ body {
     position: absolute;
     right: 0;
     top: 33px;
-    
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -99,4 +98,46 @@ body {
 .header-login:hover {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 1);/*тень нарисовал свою, так красивше*/
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);/*тень нарисовал свою, так красивше*/
+}
+.header-article {
+    margin-top: 196px;
+}
+.header-article-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    margin-bottom: 39px;
+}
+.header-article-content {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.header-article-button {
+    display: block;
+    padding: 17px 53px 17px 52px;
+    margin-top: 55px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(237, 76, 92);
+    border-radius: 6px;
+    border-style: none;
+    cursor: pointer;
+}
+.header-article-button:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
