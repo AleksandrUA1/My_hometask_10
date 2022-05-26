@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(213,32,71,0.8),  rgba(238,61,27,0.8)),  url(../img/header-banner.png);
+    width: 1440px;
+    height: 782px;
+}
+.content-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1110px;
+}
+.first-header-line {
+    position: relative;
+}
+.container-logo {
+    position: absolute;
+    width: 172px;
+    height: 29px;
+    top: 39px;
+    left: 0px;
+}
+.sub-container-logo {
+    position: relative;
+    width: 172px;
+    height: 29px;
+}
+.logo-icon {
+    position: absolute;
+    display: block;/*когада тег <a> становится position: absolute, он остается строчным? он ведь просто изымается из потока?*/
+    left: 5%;
+    top: 20%;/*в Фигме были еще указаны свойства right и button, их тоже стоило указать, или достаточно и этих двух? logo-icon он ведь польностью изъят из потока, он сам по себе */
+}
+.logo-icon {
+    /*сделать тень для иконки, целая история, не смог разобраться*/
+}
+.logo-name {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    left: 25%;/*в Фигме эти параметры были указаты в пикселях, думаю правильнее будет в процентах. Выставил на глаз*/
+    top: 15%;
+}
+.logo-name:hover {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.header-nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 438px;/*как выровнять блочный элемент посередине, не ограничивая ширину?*/
+    padding-top: 45px;
+}
+.header-nav-item {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+}
+.header-nav-item:last-child {
+    padding-right: 0;
+}
+.header-nav-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+.header-nav-link:hover {
+    /*font-weight: 700*//*это свойство есть в Фигме. Но при наведении на ссылку, все ссылки справа дергаются. Как это побороть не додумался*/
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 1);/*тень нарисовал свою, так красивше*/
+}
+.login {
+    position: absolute;
+    right: 0;
+    top: 33px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 12px 29px 12px 28px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+.login:hover {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 1);/*тень нарисовал свою, так красивше*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);/*тень нарисовал свою, так красивше*/
+}
