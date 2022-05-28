@@ -137,7 +137,87 @@ body {
     border-radius: 6px;
     border-style: none;
     cursor: pointer;
+    background-color: #fff;
 }
 .header-article-button:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+.features-style-box {
+    background-color: #FAFAFA;;
+}
+.features {
+    padding: 63px 0 94px 0;
+}
+.features-tile {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.features-list {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    height: 250px;
+    margin: 0 30px 135px 0;/*135px - отступ для карточек "features-list" следующего ряда (4я, 5я, 6я карточка и тд).  */
+    position: relative;
+    border-radius: 10px;/*у картинки края скруглённые, но думаю бордер радиус лишним всеровно не будет.*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 100% 100%;/*картинка будет всегда растягиваться (или сжиматься) к размеру - 350*250, не зависимо от того какой у нее реальный исходный размер. В этом случаи размер загружаемых картинок должен быть кратным 350*250, чтобы сохранялись пропорции.*/
+}
+.features-list.first-image {
+    background-image: url(../img/features1.jpg);
+}
+.features-list.second-image {
+    background-image: url(../img/features2.jpg);
+}
+.features-list.third-image {
+    background-image: url(../img/features3.jpg);
+}
+.features-list:nth-child(3n) {/*свойства применятся к каждому третему элеенту*/
+    margin-right: 0;
+}
+.features-card {
+    position: absolute;
+    left: 29px;
+    top: 157px; /*Учитывая то, что размер родителя этого элемента ограничен 350*250, позишн можно указать в пикселях. */
+    width: 293px;
+    /*height: ***;*//*Высоту не задаем. Содержимое может меняться.*/ /*Но, эта карточка изьята из потока. В случаи если содержимого станет сильно больше, карточка начнет вылазить на елементы находящиеся ниже. Как это поправить, не додумался*/
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 33px 20px 25px 20px;
+    }
+.features-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+    margin-bottom: 16px;
+}
+.features-card-desk {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #101010;
+    margin-bottom: 26px;
+}
+.features-card-link {
+    display: block;
+    width: 100%;
+    max-width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ED4C5C;
+}
+.features-card-link:hover {
+    text-shadow: 0 2px 10px rgba(0, 1, 1, 0.4);
 }
