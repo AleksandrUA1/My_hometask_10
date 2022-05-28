@@ -62,7 +62,7 @@ body {
 .header-nav {
     margin-left: auto;
     margin-right: auto;
-    width: 438px;/*как выровнять блочный элемент посередине, не ограничивая ширину?*/
+    width: 438px;/*как выровнять блочный элемент посередине, не ограничивая ширину? если количество символов в блоке станет больше, все поломается*/
     padding-top: 45px;
 }
 .header-nav-item {
@@ -220,4 +220,73 @@ body {
 }
 .features-card-link:hover {
     text-shadow: 0 2px 10px rgba(0, 1, 1, 0.4);
+}
+.technology {
+    padding: 63px 0 104px 0;
+}
+.technology-tile {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 53px;
+}
+.technology-list {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    width: 255px;
+    height: 226px;
+}
+.technology-list:last-child {
+    margin-right: 0;
+}
+.technology-card {
+    padding: 0 30px 19px 34px;
+}
+.technology-card-icon {
+    position: relative;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: center;
+    color: rgba(16, 16, 16, 0.08);
+    margin-bottom: 19px;
+    width: 117px;
+    height: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.technology-card-icon-first {
+    position: absolute;
+    left: 22px;/*у родителя размеры определены. Размеры всех подключаемых иконок разные. Выровнять все иконки автоматом не получается. Выравниваю каждую иконку индивидуально*/
+    top: 57px;
+}
+.technology-card-icon-second {
+    position: absolute;
+    left: 23px;/*у родителя размеры определены. Размеры всех подключаемых иконок разные. Выровнять все иконки автоматом не получается. Выравниваю каждую иконку индивидуально*/
+    top: 64px;
+}
+.technology-card-icon-third {
+    position: absolute;
+    left: 24px;/*у родителя размеры определены. Размеры всех подключаемых иконок разные. Выровнять все иконки автоматом не получается. Выравниваю каждую иконку индивидуально*/
+    top: 61px;
+}
+.technology-card-icon-fourth {
+    position: absolute;
+    left: 37px;/*у родителя размеры определены. Размеры всех подключаемых иконок разные. Выровнять все иконки автоматом не получается. Выравниваю каждую иконку индивидуально*/
+    top: 69px;
+}
+.technology-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
+    margin-bottom: 10px;
+}
+.technology-card-desk {
+    line-height: 18px;
+    text-align: center;
 }
