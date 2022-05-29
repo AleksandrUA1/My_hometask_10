@@ -6,6 +6,7 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
+/*----------------------------------------------------------*/
 .header {
     display: block;
     margin-left: auto;
@@ -41,9 +42,8 @@ body {
     left: 5%;
     top: 20%;/*в Фигме были еще указаны свойства right и button, их тоже стоило указать, или достаточно и этих двух? logo-icon он ведь польностью изъят из потока, он сам по себе */
 }
-.header-logo-icon {
-    /*сделать тень для иконки, целая история, не смог разобраться*/
-}
+/*.header-logo-icon 
+    сделать тень для иконки, целая история, не смог разобраться*/
 .header-logo-name {
     position: absolute;
     display: block;
@@ -142,6 +142,7 @@ body {
 .header-article-button:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
+/*--------------------------------------------------------------------------------------*/
 .features-style-box {
     background-color: #FAFAFA;;
 }
@@ -219,8 +220,10 @@ body {
     color: #ED4C5C;
 }
 .features-card-link:hover {
-    text-shadow: 0 2px 10px rgba(0, 1, 1, 0.4);
+    text-shadow: 0 2px 10px rgba(0, 0, 1, 0.2);
+    color: #e43647;
 }
+/*-------------------------------------------------------------------------------------------*/
 .technology {
     padding: 63px 0 104px 0;
 }
@@ -289,4 +292,87 @@ body {
 .technology-card-desk {
     line-height: 18px;
     text-align: center;
+    font-size: 12px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+.footer-style-box {
+    background-color: #fafafa;
+    padding: 85px 0 83px 0;
+}
+.footer-card {
+    width: 254px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+.footer-card:nth-child(4n) {
+    margin-right: 0;
+}
+.footer-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left; /*нужно ли здесь это свойство? или оно работает по умолчанию? */
+    color: #101010;
+    margin-bottom: 28px;
+}
+.footer-card-desk {
+    padding-right: 50px;
+    line-height: 18px;
+    color: #101010;
+}
+.footer-card-link {
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+}
+.footer-card-link:hover {
+    color: #e43647;
+}
+.footer-card-mail {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #101010;
+    margin-bottom: 7px;
+}
+.footer-card-mail:hover {
+    color: #e43647;
+}
+.footer-card-tel {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: #101010;
+    margin-bottom: 17px;
+}
+.footer-card-tel:hover {
+    color: #e43647;
+}
+.footer-cards-social-link {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+.footer-card-social-icon {
+    fill: #101010;
+}
+.footer-card-social-icon:hover {
+    fill: #e43647;
+}
+.footer-card-support {
+    background-image: url(../img/we_support.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 216px;
+    height: 31px;
+}
+.footer-copyright {
+    margin-top: 109px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #101010;
 }
